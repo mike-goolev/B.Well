@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class testRunner.TestRunner</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class testRunner.TestRunner</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/testRunner.html">testRunner</a> &gt; TestRunner</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1m7.77s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">runScenario[0](&quot;​User can Sign in with valid credentials&quot;, &quot;​ BWell Automation QATask&quot;)</td>
+<td class="success">19.284s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">runScenario[1](&quot;​User can sort in ascending order all Appointments services by name ​&quot;, &quot;​ BWell Automation QATask&quot;)</td>
+<td class="success">23.085s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">runScenario[2](&quot;​ User can search all Appointments services by name&quot;, &quot;​ BWell Automation QATask&quot;)</td>
+<td class="success">25.400s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>
+@desktop @web @SignIn
+Scenario: ​User can Sign in with valid credentials            ?[90m# src/test/java/features/BWell_QA_task.feature:18?[0m
+
+Executing preconditions for stepDefinitions.BWellAutomationTaskSteps...
+
+
+**************************************************
+* Initializing BWellAutomationTaskSteps...
+**************************************************
+Browser: firefox
+  ?[32mGiven ?[0m?[32mI am on ?[0m?[32m?[1m&quot;http://login.myappcms.com/&quot;?[0m?[32m home page?[0m        ?[90m# stepDefinitions.BWellAutomationTaskSteps.iAmOnLoginHomePage(java.lang.String)?[0m
+  ?[32mWhen ?[0m?[32mI type ​string as App Name?[0m                             ?[90m# stepDefinitions.BWellAutomationTaskSteps.iTypeAppName()?[0m
+  ?[32mAnd ?[0m?[32mI type ​username​ as Email address?[0m                      ?[90m# stepDefinitions.BWellAutomationTaskSteps.iTypeEmailAddress()?[0m
+  ?[32mAnd ?[0m?[32mI type ​password as Password?[0m                            ?[90m# stepDefinitions.BWellAutomationTaskSteps.iTypePassword()?[0m
+  ?[32mAnd ?[0m?[32mI click on Sign in button?[0m                               ?[90m# stepDefinitions.BWellAutomationTaskSteps.iClickOnSignInButton()?[0m
+  ?[32mThen ?[0m?[32mI should be on ​?[0m?[32m?[1m&quot;http://login.myappcms.com/build&quot;?[0m?[32m page?[0m ?[90m# stepDefinitions.BWellAutomationTaskSteps.iShouldBeOnDashboardPage(java.lang.String)?[0m
+  ?[32mThen ?[0m?[32mI should see my Dashboard?[0m                              ?[90m# stepDefinitions.BWellAutomationTaskSteps.iShouldSeeMyDashboard()?[0m
+
+**************************************************
+* Finishing BWellAutomationTaskSteps...
+**************************************************
+
+Testing finished.
+
+
+@desktop @web @Sorting
+Scenario: ​User can sort in ascending order all Appointments services by name ​ ?[90m# src/test/java/features/BWell_QA_task.feature:22?[0m
+
+Executing preconditions for stepDefinitions.BWellAutomationTaskSteps...
+
+
+**************************************************
+* Initializing BWellAutomationTaskSteps...
+**************************************************
+Browser: firefox
+  ?[32mGiven ?[0m?[32mI am on ?[0m?[32m?[1m&quot;http://login.myappcms.com/&quot;?[0m?[32m home page?[0m                          ?[90m# stepDefinitions.BWellAutomationTaskSteps.iAmOnLoginHomePage(java.lang.String)?[0m
+  ?[32mWhen ?[0m?[32mI type ​string as App Name?[0m                                               ?[90m# stepDefinitions.BWellAutomationTaskSteps.iTypeAppName()?[0m
+  ?[32mAnd ?[0m?[32mI type ​username​ as Email address?[0m                                        ?[90m# stepDefinitions.BWellAutomationTaskSteps.iTypeEmailAddress()?[0m
+  ?[32mAnd ?[0m?[32mI type ​password as Password?[0m                                              ?[90m# stepDefinitions.BWellAutomationTaskSteps.iTypePassword()?[0m
+  ?[32mAnd ?[0m?[32mI click on Sign in button?[0m                                                 ?[90m# stepDefinitions.BWellAutomationTaskSteps.iClickOnSignInButton()?[0m
+  ?[32mThen ?[0m?[32mI should be on ​?[0m?[32m?[1m&quot;http://login.myappcms.com/build&quot;?[0m?[32m page?[0m                   ?[90m# stepDefinitions.BWellAutomationTaskSteps.iShouldBeOnDashboardPage(java.lang.String)?[0m
+  ?[32mGiven ?[0m?[32mI am on ?[0m?[32m?[1m&quot;http://login.myappcms.com/build&quot;?[0m?[32m page?[0m                          ?[90m# stepDefinitions.BWellAutomationTaskSteps.iAmOnDashboardPage(java.lang.String)?[0m
+  ?[32mWhen ?[0m?[32mI click ​Sort Ascending option​ on ​Service Name​ column?[0m                 ?[90m# stepDefinitions.BWellAutomationTaskSteps.iClickOnServiceNameColumn()?[0m
+Service Name column is sorted in ascending order:
+[ ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  , 34, a, cds, dsf, fgdf, John Doe Oil Change and More, S1$#$$$&amp;%^*^(&amp;()*)**(_(_)_()(_)(_(_(_((_()(^%^$FHGVGHSVDAVDAVDABVDADABDDA DMBAHDABJHQT%#&amp;^UT^&amp;&amp;#T@#, t]
+  ?[32mThen ?[0m?[32mI should see correct results list after sorting?[0m                          ?[90m# stepDefinitions.BWellAutomationTaskSteps.iShouldSeeCorrectResultsListAfterSorting()?[0m
+
+**************************************************
+* Finishing BWellAutomationTaskSteps...
+**************************************************
+
+Testing finished.
+
+
+@desktop @web @Searching
+Scenario: ​ User can search all Appointments services by name ?[90m# src/test/java/features/BWell_QA_task.feature:28?[0m
+
+Executing preconditions for stepDefinitions.BWellAutomationTaskSteps...
+
+
+**************************************************
+* Initializing BWellAutomationTaskSteps...
+**************************************************
+Browser: firefox
+  ?[32mGiven ?[0m?[32mI am on ?[0m?[32m?[1m&quot;http://login.myappcms.com/&quot;?[0m?[32m home page?[0m        ?[90m# stepDefinitions.BWellAutomationTaskSteps.iAmOnLoginHomePage(java.lang.String)?[0m
+  ?[32mWhen ?[0m?[32mI type ​string as App Name?[0m                             ?[90m# stepDefinitions.BWellAutomationTaskSteps.iTypeAppName()?[0m
+  ?[32mAnd ?[0m?[32mI type ​username​ as Email address?[0m                      ?[90m# stepDefinitions.BWellAutomationTaskSteps.iTypeEmailAddress()?[0m
+  ?[32mAnd ?[0m?[32mI type ​password as Password?[0m                            ?[90m# stepDefinitions.BWellAutomationTaskSteps.iTypePassword()?[0m
+  ?[32mAnd ?[0m?[32mI click on Sign in button?[0m                               ?[90m# stepDefinitions.BWellAutomationTaskSteps.iClickOnSignInButton()?[0m
+  ?[32mThen ?[0m?[32mI should be on ​?[0m?[32m?[1m&quot;http://login.myappcms.com/build&quot;?[0m?[32m page?[0m ?[90m# stepDefinitions.BWellAutomationTaskSteps.iShouldBeOnDashboardPage(java.lang.String)?[0m
+  ?[32mGiven ?[0m?[32mI am on ?[0m?[32m?[1m&quot;http://login.myappcms.com/build&quot;?[0m?[32m page?[0m        ?[90m# stepDefinitions.BWellAutomationTaskSteps.iAmOnDashboardPage(java.lang.String)?[0m
+  ?[32mWhen ?[0m?[32mI type ​keyword​ in the Search box?[0m                     ?[90m# stepDefinitions.BWellAutomationTaskSteps.iTypekeywordInTheSearchBox()?[0m
+Keyword 'colour' was found 1 time(s) inside the table
+[John Doe Oil Change and More, Synthetic Oil Change with Break Inspection. Customer is in a rush. &lt;br&gt;, 1 Hours, 65.00, 10:00a-9:00p, , 2018, Honda, Insight, 45230 miles, Last Maintenance Date 09/30/2019, Jacob D, (773)732-1766, Break Pad worn out, customer refused to be proactive, $20 coupon applied last visit, Note to Service Manager: Offer a big coupons to customer for break pad done TODAY!, ,  , colour,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  , ]
+  ?[32mThen ?[0m?[32mI should see correct results list after searching?[0m      ?[90m# stepDefinitions.BWellAutomationTaskSteps.iShouldSeeCorrectResultsListAfterSearching()?[0m
+
+**************************************************
+* Finishing BWellAutomationTaskSteps...
+**************************************************
+
+Testing finished.
+
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Apr 24, 2020 10:51:44 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Apr 24, 2020 10:52:03 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Apr 24, 2020 10:52:26 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.2.1</a> at Apr 24, 2020 10:52:48 PM</p>
+</div>
+</div>
+</body>
+</html>

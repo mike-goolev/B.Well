@@ -1,0 +1,43 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+    compile group: 'io.cucumber', name: 'cucumber-java', version: '5.6.0'
+    testCompile group: 'org.testng', name: 'testng', version: '7.1.0'
+    compile group: 'io.cucumber', name: 'cucumber-testng', version: '5.6.0'
+    compile group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+    compile group: 'commons-io', name: 'commons-io', version: '2.6'
+}
+
+configurations {
+    cucumberRuntime.extendsFrom testRuntime
+}
+
+task cucumber() {
+    dependsOn assemble, compileTestJava
+    doLast {
+        javaexec {
+            main = "cucumber.api.cli.Main"
+            classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
+            args = ['--plugin', 'pretty', '--glue', 'stepDef', 'src/test/java']
+        }
+    }
+}
+
+test {
+    useTestNG()
+    scanForTestClasses = false
+}
+
+
