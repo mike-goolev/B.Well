@@ -9,7 +9,7 @@ I used best practice of utilizing Page Object Modal for the BDD framework. <br /
 Implemented modules: <br />
 `pages` (each object there represents unique page of the application) <br />
 `features` (test scenarios - high level description) <br />
-`stepDefinitions` (actual implementation of the test scenarios from the feature files)
+`stepDefinitions` (actual implementation of the test scenarios from the feature files) <br />
 `hooks` (actions which are executed before/after running each test) <br />
 `testData` (test data is places into JSON object which is easily reachable from the step definitions classes. Other option is to hard code test data into feature files) <br />
 `utils` (locators, browser and environment configurations, data importer class). <br />
