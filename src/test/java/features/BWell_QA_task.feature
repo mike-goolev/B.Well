@@ -1,4 +1,4 @@
-@desktop @web
+@desktop @web @QA_task
 # As a <type of user> I want <some goal> so that <some reason> ​
 
 Feature:​ BWell Automation QATask
@@ -12,11 +12,10 @@ Feature:​ BWell Automation QATask
     And I type ​username​ as Email address
     And I type ​password as Password
     And I click on Sign in button
-    Then I should be on ​"http://login.myappcms.com/build" page
 
   @SignIn
   Scenario: ​User can Sign in with valid credentials
-    Then I should see my Dashboard
+    Then I should see my Content
 
   @Sorting
   Scenario: ​User can sort in ascending order all Appointments services by name ​

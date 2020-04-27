@@ -1,27 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="testRunner.TestRunner" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-04-25T03:51:40" hostname="AUSAL1T7GTFJ" time="67.776">
+<testsuite name="testRunner.TestRunner" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-04-27T06:47:55" hostname="AUSAL1T7GTFJ" time="156.626">
   <properties/>
-  <testcase name="runScenario[0](&quot;​User can Sign in with valid credentials&quot;, &quot;​ BWell Automation QATask&quot;)" classname="testRunner.TestRunner" time="19.284"/>
-  <testcase name="runScenario[1](&quot;​User can sort in ascending order all Appointments services by name ​&quot;, &quot;​ BWell Automation QATask&quot;)" classname="testRunner.TestRunner" time="23.085"/>
-  <testcase name="runScenario[2](&quot;​ User can search all Appointments services by name&quot;, &quot;​ BWell Automation QATask&quot;)" classname="testRunner.TestRunner" time="25.4"/>
+  <testcase name="runScenario[0](&quot;User can sign out from the profile&quot;, &quot;​ Content page header functionality&quot;)" classname="testRunner.TestRunner" time="25.34"/>
+  <testcase name="runScenario[1](&quot;​User can click on all buttons in the header of the page&quot;, &quot;​ Content page header functionality&quot;)" classname="testRunner.TestRunner" time="21.472"/>
+  <testcase name="runScenario[2](&quot;User can change language support for the application&quot;, &quot;​ Content page header functionality&quot;)" classname="testRunner.TestRunner" time="25.547"/>
+  <testcase name="runScenario[3](&quot;​User can Sign in with valid credentials&quot;, &quot;​ BWell Automation QATask&quot;)" classname="testRunner.TestRunner" time="20.098"/>
+  <testcase name="runScenario[4](&quot;​User can sort in ascending order all Appointments services by name ​&quot;, &quot;​ BWell Automation QATask&quot;)" classname="testRunner.TestRunner" time="29.002"/>
+  <testcase name="runScenario[5](&quot;​ User can search all Appointments services by name&quot;, &quot;​ BWell Automation QATask&quot;)" classname="testRunner.TestRunner" time="35.157"/>
   <system-out><![CDATA[
-@desktop @web @SignIn
-Scenario: ​User can Sign in with valid credentials            ?[90m# src/test/java/features/BWell_QA_task.feature:18?[0m
+@Header @SignOut
+Scenario: User can sign out from the profile       ?[90m# src/test/java/features/BWell_Content_header.feature:10?[0m
 
-Executing preconditions for stepDefinitions.BWellAutomationTaskSteps...
+Executing preconditions for stepDefinitions.ContentHeaderSteps...
 
 
 **************************************************
-* Initializing BWellAutomationTaskSteps...
+* Initializing ContentHeaderSteps...
 **************************************************
 Browser: firefox
-  ?[32mGiven ?[0m?[32mI am on ?[0m?[32m?[1m"http://login.myappcms.com/"?[0m?[32m home page?[0m        ?[90m# stepDefinitions.BWellAutomationTaskSteps.iAmOnLoginHomePage(java.lang.String)?[0m
-  ?[32mWhen ?[0m?[32mI type ​string as App Name?[0m                             ?[90m# stepDefinitions.BWellAutomationTaskSteps.iTypeAppName()?[0m
-  ?[32mAnd ?[0m?[32mI type ​username​ as Email address?[0m                      ?[90m# stepDefinitions.BWellAutomationTaskSteps.iTypeEmailAddress()?[0m
-  ?[32mAnd ?[0m?[32mI type ​password as Password?[0m                            ?[90m# stepDefinitions.BWellAutomationTaskSteps.iTypePassword()?[0m
-  ?[32mAnd ?[0m?[32mI click on Sign in button?[0m                               ?[90m# stepDefinitions.BWellAutomationTaskSteps.iClickOnSignInButton()?[0m
-  ?[32mThen ?[0m?[32mI should be on ​?[0m?[32m?[1m"http://login.myappcms.com/build"?[0m?[32m page?[0m ?[90m# stepDefinitions.BWellAutomationTaskSteps.iShouldBeOnDashboardPage(java.lang.String)?[0m
-  ?[32mThen ?[0m?[32mI should see my Dashboard?[0m                              ?[90m# stepDefinitions.BWellAutomationTaskSteps.iShouldSeeMyDashboard()?[0m
+  ?[32mGiven ?[0m?[32mUser is signed in?[0m                          ?[90m# stepDefinitions.ContentHeaderSteps.userIsSignedIn()?[0m
+  ?[32mGiven ?[0m?[32mContent Demo Account button is displayed?[0m   ?[90m# stepDefinitions.ContentHeaderSteps.iSeeDemoAccountButton()?[0m
+  ?[32mWhen ?[0m?[32mI click on Demo Account button?[0m              ?[90m# stepDefinitions.ContentHeaderSteps.iClickOnDemoAccountButton()?[0m
+  ?[32mAnd ?[0m?[32mI click on Sign out button?[0m                   ?[90m# stepDefinitions.ContentHeaderSteps.iClickOnSignOutButton()?[0m
+  ?[32mThen ?[0m?[32mI should be logged out and see sign in form?[0m ?[90m# stepDefinitions.ContentHeaderSteps.iShouldBeLoggedOutAndSeeSignInForm()?[0m
+
+**************************************************
+* Finishing ContentHeaderSteps...
+**************************************************
+
+Testing finished.
+
 
 **************************************************
 * Finishing BWellAutomationTaskSteps...
@@ -30,8 +38,105 @@ Browser: firefox
 Testing finished.
 
 
-@desktop @web @Sorting
-Scenario: ​User can sort in ascending order all Appointments services by name ​ ?[90m# src/test/java/features/BWell_QA_task.feature:22?[0m
+@Header @HeaderNavigation
+Scenario: ​User can click on all buttons in the header of the page               ?[90m# src/test/java/features/BWell_Content_header.feature:17?[0m
+
+Executing preconditions for stepDefinitions.ContentHeaderSteps...
+
+
+**************************************************
+* Initializing ContentHeaderSteps...
+**************************************************
+Browser: firefox
+  ?[32mGiven ?[0m?[32mUser is signed in?[0m                                                        ?[90m# stepDefinitions.ContentHeaderSteps.userIsSignedIn()?[0m
+  ?[32mGiven ?[0m?[32mNavigation tab buttons are displayed?[0m                                     ?[90m# stepDefinitions.ContentHeaderSteps.iCanSeeNavigationButtons()?[0m
+  ?[32mWhen ?[0m?[32mI click on Analytics tab navigation?[0m                                       ?[90m# stepDefinitions.ContentHeaderSteps.iClickOnAnalyticsTabNavigation()?[0m
+  ?[32mThen ?[0m?[32mI should be on ?[0m?[32m?[1m"http://login.myappcms.com/analyze"?[0m?[32m analyze page?[0m           ?[90m# stepDefinitions.ContentHeaderSteps.iShouldBeOnAnalyzePage(java.lang.String)?[0m
+  ?[32mWhen ?[0m?[32mI click on Push Message tab navigation?[0m                                    ?[90m# stepDefinitions.ContentHeaderSteps.iClickOnPushMessageTabNavigation()?[0m
+  ?[32mThen ?[0m?[32mI should be on ?[0m?[32m?[1m"http://login.myappcms.com/pushmessage"?[0m?[32m push messages page?[0m ?[90m# stepDefinitions.ContentHeaderSteps.iShouldBeOnPushMessagePage(java.lang.String)?[0m
+  ?[32mWhen ?[0m?[32mI click on Manage Your App tab navigation?[0m                                 ?[90m# stepDefinitions.ContentHeaderSteps.iClickOnManageYourAppTabNavigation()?[0m
+  ?[32mThen ?[0m?[32mI should be on ?[0m?[32m?[1m"http://login.myappcms.com/build"?[0m?[32m page?[0m                     ?[90m# stepDefinitions.ContentHeaderSteps.iShouldBeOnContentPage(java.lang.String)?[0m
+
+**************************************************
+* Finishing ContentHeaderSteps...
+**************************************************
+
+Testing finished.
+
+
+**************************************************
+* Finishing BWellAutomationTaskSteps...
+**************************************************
+
+Testing finished.
+
+
+@Header @Language
+Scenario: User can change language support for the application  ?[90m# src/test/java/features/BWell_Content_header.feature:27?[0m
+
+Executing preconditions for stepDefinitions.ContentHeaderSteps...
+
+
+**************************************************
+* Initializing ContentHeaderSteps...
+**************************************************
+Browser: firefox
+  ?[32mGiven ?[0m?[32mUser is signed in?[0m                                       ?[90m# stepDefinitions.ContentHeaderSteps.userIsSignedIn()?[0m
+  ?[32mGiven ?[0m?[32mContent Demo Account button is displayed?[0m                ?[90m# stepDefinitions.ContentHeaderSteps.iSeeDemoAccountButton()?[0m
+  ?[32mWhen ?[0m?[32mI click on Demo Account button?[0m                           ?[90m# stepDefinitions.ContentHeaderSteps.iClickOnDemoAccountButton()?[0m
+  ?[32mAnd ?[0m?[32mI click on drop down menu?[0m                                 ?[90m# stepDefinitions.ContentHeaderSteps.iClickOnDropDownMenu()?[0m
+  ?[32mAnd ?[0m?[32mI select a language from drop down?[0m                        ?[90m# stepDefinitions.ContentHeaderSteps.iSelectALanguageFromDropDown()?[0m
+  ?[32mThen ?[0m?[32mTab navigation buttons should be translated?[0m              ?[90m# stepDefinitions.ContentHeaderSteps.tabNavigationButtonsShouldBeTranslated()?[0m
+  ?[32mAnd ?[0m?[32mI select default English language?[0m                         ?[90m# stepDefinitions.ContentHeaderSteps.iSelectDefaultEnglishLanguage()?[0m
+  ?[32mThen ?[0m?[32mTab navigation buttons should be translated into English?[0m ?[90m# stepDefinitions.ContentHeaderSteps.tabNavigationButtonsAreTranslatedIntoEnglish()?[0m
+
+**************************************************
+* Finishing ContentHeaderSteps...
+**************************************************
+
+Testing finished.
+
+
+**************************************************
+* Finishing BWellAutomationTaskSteps...
+**************************************************
+
+Testing finished.
+
+
+@desktop @web @QA_task @SignIn
+Scenario: ​User can Sign in with valid credentials     ?[90m# src/test/java/features/BWell_QA_task.feature:17?[0m
+
+Executing preconditions for stepDefinitions.BWellAutomationTaskSteps...
+
+
+**************************************************
+* Initializing BWellAutomationTaskSteps...
+**************************************************
+Browser: firefox
+  ?[32mGiven ?[0m?[32mI am on ?[0m?[32m?[1m"http://login.myappcms.com/"?[0m?[32m home page?[0m ?[90m# stepDefinitions.BWellAutomationTaskSteps.iAmOnLoginHomePage(java.lang.String)?[0m
+  ?[32mWhen ?[0m?[32mI type ​string as App Name?[0m                      ?[90m# stepDefinitions.BWellAutomationTaskSteps.iTypeAppName()?[0m
+  ?[32mAnd ?[0m?[32mI type ​username​ as Email address?[0m               ?[90m# stepDefinitions.BWellAutomationTaskSteps.iTypeEmailAddress()?[0m
+  ?[32mAnd ?[0m?[32mI type ​password as Password?[0m                     ?[90m# stepDefinitions.BWellAutomationTaskSteps.iTypePassword()?[0m
+  ?[32mAnd ?[0m?[32mI click on Sign in button?[0m                        ?[90m# stepDefinitions.BWellAutomationTaskSteps.iClickOnSignInButton()?[0m
+  ?[32mThen ?[0m?[32mI should see my Content?[0m                         ?[90m# stepDefinitions.BWellAutomationTaskSteps.iShouldSeeMyContent()?[0m
+
+**************************************************
+* Finishing ContentHeaderSteps...
+**************************************************
+
+Testing finished.
+
+
+**************************************************
+* Finishing BWellAutomationTaskSteps...
+**************************************************
+
+Testing finished.
+
+
+@desktop @web @QA_task @Sorting
+Scenario: ​User can sort in ascending order all Appointments services by name ​ ?[90m# src/test/java/features/BWell_QA_task.feature:21?[0m
 
 Executing preconditions for stepDefinitions.BWellAutomationTaskSteps...
 
@@ -45,12 +150,18 @@ Browser: firefox
   ?[32mAnd ?[0m?[32mI type ​username​ as Email address?[0m                                        ?[90m# stepDefinitions.BWellAutomationTaskSteps.iTypeEmailAddress()?[0m
   ?[32mAnd ?[0m?[32mI type ​password as Password?[0m                                              ?[90m# stepDefinitions.BWellAutomationTaskSteps.iTypePassword()?[0m
   ?[32mAnd ?[0m?[32mI click on Sign in button?[0m                                                 ?[90m# stepDefinitions.BWellAutomationTaskSteps.iClickOnSignInButton()?[0m
-  ?[32mThen ?[0m?[32mI should be on ​?[0m?[32m?[1m"http://login.myappcms.com/build"?[0m?[32m page?[0m                   ?[90m# stepDefinitions.BWellAutomationTaskSteps.iShouldBeOnDashboardPage(java.lang.String)?[0m
-  ?[32mGiven ?[0m?[32mI am on ?[0m?[32m?[1m"http://login.myappcms.com/build"?[0m?[32m page?[0m                          ?[90m# stepDefinitions.BWellAutomationTaskSteps.iAmOnDashboardPage(java.lang.String)?[0m
+  ?[32mGiven ?[0m?[32mI am on ?[0m?[32m?[1m"http://login.myappcms.com/build"?[0m?[32m page?[0m                          ?[90m# stepDefinitions.BWellAutomationTaskSteps.iAmOnContentPage(java.lang.String)?[0m
   ?[32mWhen ?[0m?[32mI click ​Sort Ascending option​ on ​Service Name​ column?[0m                 ?[90m# stepDefinitions.BWellAutomationTaskSteps.iClickOnServiceNameColumn()?[0m
 Service Name column is sorted in ascending order:
 [ ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  , 34, a, cds, dsf, fgdf, John Doe Oil Change and More, S1$#$$$&%^*^(&()*)**(_(_)_()(_)(_(_(_((_()(^%^$FHGVGHSVDAVDAVDABVDADABDDA DMBAHDABJHQT%#&^UT^&&#T@#, t]
   ?[32mThen ?[0m?[32mI should see correct results list after sorting?[0m                          ?[90m# stepDefinitions.BWellAutomationTaskSteps.iShouldSeeCorrectResultsListAfterSorting()?[0m
+
+**************************************************
+* Finishing ContentHeaderSteps...
+**************************************************
+
+Testing finished.
+
 
 **************************************************
 * Finishing BWellAutomationTaskSteps...
@@ -59,8 +170,8 @@ Service Name column is sorted in ascending order:
 Testing finished.
 
 
-@desktop @web @Searching
-Scenario: ​ User can search all Appointments services by name ?[90m# src/test/java/features/BWell_QA_task.feature:28?[0m
+@desktop @web @QA_task @Searching
+Scenario: ​ User can search all Appointments services by name ?[90m# src/test/java/features/BWell_QA_task.feature:27?[0m
 
 Executing preconditions for stepDefinitions.BWellAutomationTaskSteps...
 
@@ -74,12 +185,18 @@ Browser: firefox
   ?[32mAnd ?[0m?[32mI type ​username​ as Email address?[0m                      ?[90m# stepDefinitions.BWellAutomationTaskSteps.iTypeEmailAddress()?[0m
   ?[32mAnd ?[0m?[32mI type ​password as Password?[0m                            ?[90m# stepDefinitions.BWellAutomationTaskSteps.iTypePassword()?[0m
   ?[32mAnd ?[0m?[32mI click on Sign in button?[0m                               ?[90m# stepDefinitions.BWellAutomationTaskSteps.iClickOnSignInButton()?[0m
-  ?[32mThen ?[0m?[32mI should be on ​?[0m?[32m?[1m"http://login.myappcms.com/build"?[0m?[32m page?[0m ?[90m# stepDefinitions.BWellAutomationTaskSteps.iShouldBeOnDashboardPage(java.lang.String)?[0m
-  ?[32mGiven ?[0m?[32mI am on ?[0m?[32m?[1m"http://login.myappcms.com/build"?[0m?[32m page?[0m        ?[90m# stepDefinitions.BWellAutomationTaskSteps.iAmOnDashboardPage(java.lang.String)?[0m
+  ?[32mGiven ?[0m?[32mI am on ?[0m?[32m?[1m"http://login.myappcms.com/build"?[0m?[32m page?[0m        ?[90m# stepDefinitions.BWellAutomationTaskSteps.iAmOnContentPage(java.lang.String)?[0m
   ?[32mWhen ?[0m?[32mI type ​keyword​ in the Search box?[0m                     ?[90m# stepDefinitions.BWellAutomationTaskSteps.iTypekeywordInTheSearchBox()?[0m
 Keyword 'colour' was found 1 time(s) inside the table
-[John Doe Oil Change and More, Synthetic Oil Change with Break Inspection. Customer is in a rush. <br>, 1 Hours, 65.00, 10:00a-9:00p, , 2018, Honda, Insight, 45230 miles, Last Maintenance Date 09/30/2019, Jacob D, (773)732-1766, Break Pad worn out, customer refused to be proactive, $20 coupon applied last visit, Note to Service Manager: Offer a big coupons to customer for break pad done TODAY!, ,  , colour,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  , ]
+[ , colour,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  , ]
   ?[32mThen ?[0m?[32mI should see correct results list after searching?[0m      ?[90m# stepDefinitions.BWellAutomationTaskSteps.iShouldSeeCorrectResultsListAfterSearching()?[0m
+
+**************************************************
+* Finishing ContentHeaderSteps...
+**************************************************
+
+Testing finished.
+
 
 **************************************************
 * Finishing BWellAutomationTaskSteps...
@@ -88,11 +205,17 @@ Keyword 'colour' was found 1 time(s) inside the table
 Testing finished.
 
 ]]></system-out>
-  <system-err><![CDATA[Apr 24, 2020 10:51:44 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+  <system-err><![CDATA[Apr 27, 2020 1:48:02 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Apr 24, 2020 10:52:03 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Apr 27, 2020 1:48:25 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Apr 24, 2020 10:52:26 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Apr 27, 2020 1:48:46 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Apr 27, 2020 1:49:11 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Apr 27, 2020 1:49:31 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Apr 27, 2020 1:50:00 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

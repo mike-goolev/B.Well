@@ -15,7 +15,7 @@ public class BasePage {
         driver = d;
 
         /* Setup fluent wait */
-        waitInSeconds = 20;
+        waitInSeconds = 25;
         wait = new WebDriverWait(driver, waitInSeconds, 500);
         wait.ignoring(ElementClickInterceptedException.class)
                 .ignoring(ElementNotInteractableException.class)

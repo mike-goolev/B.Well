@@ -3,6 +3,7 @@
     "appName": "CMS Demo Account",
     "email": "demo@diyappdesigner.com",
     "password": "demo123",
-    "keyWord": "colour"
+    "keyWord": "colour",
+    "languageIndex" : "8"
   }
 }
