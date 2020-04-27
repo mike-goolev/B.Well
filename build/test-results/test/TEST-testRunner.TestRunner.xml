@@ -1,109 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="testRunner.TestRunner" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-04-27T06:47:55" hostname="AUSAL1T7GTFJ" time="156.626">
+<testsuite name="testRunner.TestRunner" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-04-27T08:36:31" hostname="AUSAL1T7GTFJ" time="54.959">
   <properties/>
-  <testcase name="runScenario[0](&quot;User can sign out from the profile&quot;, &quot;​ Content page header functionality&quot;)" classname="testRunner.TestRunner" time="25.34"/>
-  <testcase name="runScenario[1](&quot;​User can click on all buttons in the header of the page&quot;, &quot;​ Content page header functionality&quot;)" classname="testRunner.TestRunner" time="21.472"/>
-  <testcase name="runScenario[2](&quot;User can change language support for the application&quot;, &quot;​ Content page header functionality&quot;)" classname="testRunner.TestRunner" time="25.547"/>
-  <testcase name="runScenario[3](&quot;​User can Sign in with valid credentials&quot;, &quot;​ BWell Automation QATask&quot;)" classname="testRunner.TestRunner" time="20.098"/>
-  <testcase name="runScenario[4](&quot;​User can sort in ascending order all Appointments services by name ​&quot;, &quot;​ BWell Automation QATask&quot;)" classname="testRunner.TestRunner" time="29.002"/>
-  <testcase name="runScenario[5](&quot;​ User can search all Appointments services by name&quot;, &quot;​ BWell Automation QATask&quot;)" classname="testRunner.TestRunner" time="35.157"/>
+  <testcase name="runScenario[0](&quot;​User can Sign in with valid credentials&quot;, &quot;​ BWell Automation QATask&quot;)" classname="testRunner.TestRunner" time="17.491"/>
+  <testcase name="runScenario[1](&quot;​User can sort in ascending order all Appointments services by name ​&quot;, &quot;​ BWell Automation QATask&quot;)" classname="testRunner.TestRunner" time="18.427"/>
+  <testcase name="runScenario[2](&quot;​ User can search all Appointments services by name&quot;, &quot;​ BWell Automation QATask&quot;)" classname="testRunner.TestRunner" time="19.037"/>
   <system-out><![CDATA[
-@Header @SignOut
-Scenario: User can sign out from the profile       ?[90m# src/test/java/features/BWell_Content_header.feature:10?[0m
-
-Executing preconditions for stepDefinitions.ContentHeaderSteps...
-
-
-**************************************************
-* Initializing ContentHeaderSteps...
-**************************************************
-Browser: firefox
-  ?[32mGiven ?[0m?[32mUser is signed in?[0m                          ?[90m# stepDefinitions.ContentHeaderSteps.userIsSignedIn()?[0m
-  ?[32mGiven ?[0m?[32mContent Demo Account button is displayed?[0m   ?[90m# stepDefinitions.ContentHeaderSteps.iSeeDemoAccountButton()?[0m
-  ?[32mWhen ?[0m?[32mI click on Demo Account button?[0m              ?[90m# stepDefinitions.ContentHeaderSteps.iClickOnDemoAccountButton()?[0m
-  ?[32mAnd ?[0m?[32mI click on Sign out button?[0m                   ?[90m# stepDefinitions.ContentHeaderSteps.iClickOnSignOutButton()?[0m
-  ?[32mThen ?[0m?[32mI should be logged out and see sign in form?[0m ?[90m# stepDefinitions.ContentHeaderSteps.iShouldBeLoggedOutAndSeeSignInForm()?[0m
-
-**************************************************
-* Finishing ContentHeaderSteps...
-**************************************************
-
-Testing finished.
-
-
-**************************************************
-* Finishing BWellAutomationTaskSteps...
-**************************************************
-
-Testing finished.
-
-
-@Header @HeaderNavigation
-Scenario: ​User can click on all buttons in the header of the page               ?[90m# src/test/java/features/BWell_Content_header.feature:17?[0m
-
-Executing preconditions for stepDefinitions.ContentHeaderSteps...
-
-
-**************************************************
-* Initializing ContentHeaderSteps...
-**************************************************
-Browser: firefox
-  ?[32mGiven ?[0m?[32mUser is signed in?[0m                                                        ?[90m# stepDefinitions.ContentHeaderSteps.userIsSignedIn()?[0m
-  ?[32mGiven ?[0m?[32mNavigation tab buttons are displayed?[0m                                     ?[90m# stepDefinitions.ContentHeaderSteps.iCanSeeNavigationButtons()?[0m
-  ?[32mWhen ?[0m?[32mI click on Analytics tab navigation?[0m                                       ?[90m# stepDefinitions.ContentHeaderSteps.iClickOnAnalyticsTabNavigation()?[0m
-  ?[32mThen ?[0m?[32mI should be on ?[0m?[32m?[1m"http://login.myappcms.com/analyze"?[0m?[32m analyze page?[0m           ?[90m# stepDefinitions.ContentHeaderSteps.iShouldBeOnAnalyzePage(java.lang.String)?[0m
-  ?[32mWhen ?[0m?[32mI click on Push Message tab navigation?[0m                                    ?[90m# stepDefinitions.ContentHeaderSteps.iClickOnPushMessageTabNavigation()?[0m
-  ?[32mThen ?[0m?[32mI should be on ?[0m?[32m?[1m"http://login.myappcms.com/pushmessage"?[0m?[32m push messages page?[0m ?[90m# stepDefinitions.ContentHeaderSteps.iShouldBeOnPushMessagePage(java.lang.String)?[0m
-  ?[32mWhen ?[0m?[32mI click on Manage Your App tab navigation?[0m                                 ?[90m# stepDefinitions.ContentHeaderSteps.iClickOnManageYourAppTabNavigation()?[0m
-  ?[32mThen ?[0m?[32mI should be on ?[0m?[32m?[1m"http://login.myappcms.com/build"?[0m?[32m page?[0m                     ?[90m# stepDefinitions.ContentHeaderSteps.iShouldBeOnContentPage(java.lang.String)?[0m
-
-**************************************************
-* Finishing ContentHeaderSteps...
-**************************************************
-
-Testing finished.
-
-
-**************************************************
-* Finishing BWellAutomationTaskSteps...
-**************************************************
-
-Testing finished.
-
-
-@Header @Language
-Scenario: User can change language support for the application  ?[90m# src/test/java/features/BWell_Content_header.feature:27?[0m
-
-Executing preconditions for stepDefinitions.ContentHeaderSteps...
-
-
-**************************************************
-* Initializing ContentHeaderSteps...
-**************************************************
-Browser: firefox
-  ?[32mGiven ?[0m?[32mUser is signed in?[0m                                       ?[90m# stepDefinitions.ContentHeaderSteps.userIsSignedIn()?[0m
-  ?[32mGiven ?[0m?[32mContent Demo Account button is displayed?[0m                ?[90m# stepDefinitions.ContentHeaderSteps.iSeeDemoAccountButton()?[0m
-  ?[32mWhen ?[0m?[32mI click on Demo Account button?[0m                           ?[90m# stepDefinitions.ContentHeaderSteps.iClickOnDemoAccountButton()?[0m
-  ?[32mAnd ?[0m?[32mI click on drop down menu?[0m                                 ?[90m# stepDefinitions.ContentHeaderSteps.iClickOnDropDownMenu()?[0m
-  ?[32mAnd ?[0m?[32mI select a language from drop down?[0m                        ?[90m# stepDefinitions.ContentHeaderSteps.iSelectALanguageFromDropDown()?[0m
-  ?[32mThen ?[0m?[32mTab navigation buttons should be translated?[0m              ?[90m# stepDefinitions.ContentHeaderSteps.tabNavigationButtonsShouldBeTranslated()?[0m
-  ?[32mAnd ?[0m?[32mI select default English language?[0m                         ?[90m# stepDefinitions.ContentHeaderSteps.iSelectDefaultEnglishLanguage()?[0m
-  ?[32mThen ?[0m?[32mTab navigation buttons should be translated into English?[0m ?[90m# stepDefinitions.ContentHeaderSteps.tabNavigationButtonsAreTranslatedIntoEnglish()?[0m
-
-**************************************************
-* Finishing ContentHeaderSteps...
-**************************************************
-
-Testing finished.
-
-
-**************************************************
-* Finishing BWellAutomationTaskSteps...
-**************************************************
-
-Testing finished.
-
-
 @desktop @web @QA_task @SignIn
 Scenario: ​User can Sign in with valid credentials     ?[90m# src/test/java/features/BWell_QA_task.feature:17?[0m
 
@@ -113,7 +14,7 @@ Executing preconditions for stepDefinitions.BWellAutomationTaskSteps...
 **************************************************
 * Initializing BWellAutomationTaskSteps...
 **************************************************
-Browser: firefox
+Browser: chrome
   ?[32mGiven ?[0m?[32mI am on ?[0m?[32m?[1m"http://login.myappcms.com/"?[0m?[32m home page?[0m ?[90m# stepDefinitions.BWellAutomationTaskSteps.iAmOnLoginHomePage(java.lang.String)?[0m
   ?[32mWhen ?[0m?[32mI type ​string as App Name?[0m                      ?[90m# stepDefinitions.BWellAutomationTaskSteps.iTypeAppName()?[0m
   ?[32mAnd ?[0m?[32mI type ​username​ as Email address?[0m               ?[90m# stepDefinitions.BWellAutomationTaskSteps.iTypeEmailAddress()?[0m
@@ -144,7 +45,7 @@ Executing preconditions for stepDefinitions.BWellAutomationTaskSteps...
 **************************************************
 * Initializing BWellAutomationTaskSteps...
 **************************************************
-Browser: firefox
+Browser: chrome
   ?[32mGiven ?[0m?[32mI am on ?[0m?[32m?[1m"http://login.myappcms.com/"?[0m?[32m home page?[0m                          ?[90m# stepDefinitions.BWellAutomationTaskSteps.iAmOnLoginHomePage(java.lang.String)?[0m
   ?[32mWhen ?[0m?[32mI type ​string as App Name?[0m                                               ?[90m# stepDefinitions.BWellAutomationTaskSteps.iTypeAppName()?[0m
   ?[32mAnd ?[0m?[32mI type ​username​ as Email address?[0m                                        ?[90m# stepDefinitions.BWellAutomationTaskSteps.iTypeEmailAddress()?[0m
@@ -153,7 +54,7 @@ Browser: firefox
   ?[32mGiven ?[0m?[32mI am on ?[0m?[32m?[1m"http://login.myappcms.com/build"?[0m?[32m page?[0m                          ?[90m# stepDefinitions.BWellAutomationTaskSteps.iAmOnContentPage(java.lang.String)?[0m
   ?[32mWhen ?[0m?[32mI click ​Sort Ascending option​ on ​Service Name​ column?[0m                 ?[90m# stepDefinitions.BWellAutomationTaskSteps.iClickOnServiceNameColumn()?[0m
 Service Name column is sorted in ascending order:
-[ ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  , 34, a, cds, dsf, fgdf, John Doe Oil Change and More, S1$#$$$&%^*^(&()*)**(_(_)_()(_)(_(_(_((_()(^%^$FHGVGHSVDAVDAVDABVDADABDDA DMBAHDABJHQT%#&^UT^&&#T@#, t]
+[ ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  ,  , *afs, 34, a, cds, dsf, John Doe Oil Change and More, S1$#$$$&%^*^(&()*)**(_(_)_()(_)(_(_(_((_()(^%^$FHGVGHSVDAVDAVDABVDADABDDA DMBAHDABJHQT%#&^UT^&&#T@#, t]
   ?[32mThen ?[0m?[32mI should see correct results list after sorting?[0m                          ?[90m# stepDefinitions.BWellAutomationTaskSteps.iShouldSeeCorrectResultsListAfterSorting()?[0m
 
 **************************************************
@@ -179,7 +80,7 @@ Executing preconditions for stepDefinitions.BWellAutomationTaskSteps...
 **************************************************
 * Initializing BWellAutomationTaskSteps...
 **************************************************
-Browser: firefox
+Browser: chrome
   ?[32mGiven ?[0m?[32mI am on ?[0m?[32m?[1m"http://login.myappcms.com/"?[0m?[32m home page?[0m        ?[90m# stepDefinitions.BWellAutomationTaskSteps.iAmOnLoginHomePage(java.lang.String)?[0m
   ?[32mWhen ?[0m?[32mI type ​string as App Name?[0m                             ?[90m# stepDefinitions.BWellAutomationTaskSteps.iTypeAppName()?[0m
   ?[32mAnd ?[0m?[32mI type ​username​ as Email address?[0m                      ?[90m# stepDefinitions.BWellAutomationTaskSteps.iTypeEmailAddress()?[0m
@@ -205,17 +106,100 @@ Testing finished.
 Testing finished.
 
 ]]></system-out>
-  <system-err><![CDATA[Apr 27, 2020 1:48:02 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+  <system-err><![CDATA[Starting ChromeDriver 81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}) on port 40972
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Apr 27, 2020 3:36:37 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Apr 27, 2020 1:48:25 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1587976597.957][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976598.059][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976598.161][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976598.266][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976599.382][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976599.484][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976602.495][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976602.597][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976602.698][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976602.801][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976602.902][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976603.003][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976603.107][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976603.209][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976603.310][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976603.411][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976603.529][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976603.631][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976603.733][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976603.834][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976603.936][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976604.038][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976604.139][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976604.241][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976604.344][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976604.447][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976604.549][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976604.651][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976604.754][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976604.858][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976604.959][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976605.060][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976605.164][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976605.287][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976605.389][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976605.493][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976605.599][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976605.703][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976605.810][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976605.920][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976606.026][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976607.038][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976607.218][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976607.330][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976607.448][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976607.552][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976607.653][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976607.754][SEVERE]: Timed out receiving message from renderer: 0.100
+Starting ChromeDriver 81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}) on port 23542
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Apr 27, 2020 3:36:51 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Apr 27, 2020 1:48:46 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1587976612.130][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976612.231][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976612.352][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976613.139][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976613.549][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976613.846][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976614.049][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976615.103][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976619.188][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976619.336][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976619.437][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976619.540][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976620.864][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976620.966][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976621.220][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976621.344][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976621.446][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976621.554][SEVERE]: Timed out receiving message from renderer: 0.100
+Starting ChromeDriver 81.0.4044.20 (f006328e39a9769596eb506c8841c3004b24e747-refs/branch-heads/4044@{#244}) on port 21004
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Apr 27, 2020 3:37:09 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Apr 27, 2020 1:49:11 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-Apr 27, 2020 1:49:31 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-Apr 27, 2020 1:50:00 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
+[1587976630.229][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976630.330][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976630.600][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976631.118][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976631.254][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976633.452][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976633.554][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976633.655][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976633.770][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976633.872][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976633.975][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976634.916][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976635.017][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587976635.118][SEVERE]: Timed out receiving message from renderer: 0.100
 ]]></system-err>
 </testsuite>

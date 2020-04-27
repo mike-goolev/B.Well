@@ -28,6 +28,13 @@ public class ServiceHooks {
         System.setProperty("webdriver.gecko.driver", "geckodriver");
         System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, "warning_logs"); // suppress console warning log
 
+
+ /*
+        For Chrome browser
+        String browser = "chrome";
+        System.setProperty("webdriver.gecko.driver", "geckodriver");
+  */
+
         /* Create a webdriver instance */
         driver = BrowserFactory.getDriver(browser);
         driver.manage().window().maximize();
